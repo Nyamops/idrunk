@@ -1,9 +1,34 @@
 version=1
 id=2739421943
 title=iDrunk chat filter
-description=Do you think that being drunk you sound like a TV presenter? Then this mod is for you!
+tags=Build 41;Balance;Hardmode;Interface;Misc;Multiplayer;Realistic;Silly/Fun
+visibility=public
+description=Do you think that being drunk you sound like a TV presenter? Now what you say will depend on your level of alcohol intoxication!
 description=
-description=Depending on the level of intoxication of your character, your chat messages will change slightly (or not slightly).
+description=[h1]Configuration for multiplayer and singleplayer[/h1]
+description=[h1]In game configuration[/h1]
+description=See screenshots in the gallery
+description=
+description=[h1]Manual configuration[/h1]
+description=You need to modify a file.
+description=[code]
+description=Windows path: %HOMEDRIVE%%HOMEPATH%/Zomboid/Server/servertest_SandboxVars.lua
+description=Linux path: ~/Zomboid/Server/servertest_SandboxVars.lua
+description=[/code]
+description=[i]"servertest" may be different if you use a custom server name. For example: myserver_SandboxVars.lua[/i]
+description=
+description=Append this to the bottom:
+description=[code]
+description=iDrunk = {
+description=    AllowYell = true,
+description=    AllowWhisper = true,
+description=    AllowFaction = false,
+description=    AllowSafehouse = false,
+description=    AllowAdmin = false,
+description=    AllowSay = true,
+description=    AllowGeneral = false,
+description=}
+description=[/code]
 description=
 description=[h1]Supported languages[/h1]
 description=[list]
@@ -17,5 +42,3 @@ description=[url=https://ko-fi.com/nyamops][img]https://i.imgur.com/5zacwdR.png[
 description=[url=https://discord.gg/UHRPcs9EbR][img]https://i.imgur.com/Qh5001l.png[/img][/url]
 description=
 description=[url=https://github.com/Nyamops/idrunk]GitHub[/url]
-tags=Build 41;Balance;Hardmode;Interface;Misc;Multiplayer;Realistic;Silly/Fun
-visibility=public
