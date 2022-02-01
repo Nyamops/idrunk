@@ -11,8 +11,17 @@ local function replaceChar(position, replace, subject)
     return replace:sub(1, position - 1) .. subject .. replace:sub(position + 1)
 end
 
-DrunkSpeechFilter = {}
+local function in_table(e, t)
+    for _, v in pairs(t) do
+        if (v == e) then
+            return true
+        end
+    end
 
+    return false
+end
+
+DrunkSpeechFilter = {}
 function DrunkSpeechFilter:filter(message)
     local drunkenness = getPlayer():getStats():getDrunkenness()
     local needChanceToModify = 100
