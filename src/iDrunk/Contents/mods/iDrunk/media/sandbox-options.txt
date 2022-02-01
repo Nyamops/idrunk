@@ -1,0 +1,43 @@
+VERSION = 1,
+
+option iDrunk.AllowYell
+{
+	type = boolean, default = true,
+	page = iDrunk, translation = AllowYell,
+}
+
+option iDrunk.AllowWhisper
+{
+	type = boolean, default = true,
+	page = iDrunk, translation = AllowWhisper,
+}
+
+option iDrunk.AllowFaction
+{
+	type = boolean, default = true,
+	page = iDrunk, translation = AllowFaction,
+}
+
+option iDrunk.AllowSafehouse
+{
+	type = boolean, default = true,
+	page = iDrunk, translation = AllowSafehouse,
+}
+
+option iDrunk.AllowAdmin
+{
+	type = boolean, default = true,
+	page = iDrunk, translation = AllowAdmin,
+}
+
+option iDrunk.AllowSay
+{
+	type = boolean, default = true,
+	page = iDrunk, translation = AllowSay,
+}
+
+option iDrunk.AllowGeneral
+{
+	type = boolean, default = true,
+	page = iDrunk, translation = AllowGeneral,
+}

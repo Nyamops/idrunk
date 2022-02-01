@@ -89,6 +89,19 @@ end
 local onCommandEntered = ISChat.onCommandEntered
 function ISChat:onCommandEntered()
     local command, text = string.match(ISChat.instance.textEntry:getText(), '(/%a+)%s+(.*)')
-    ISChat.instance.textEntry:setText(command .. ' ' .. DrunkSpeechFilter:filter(text))
+    local isAllowed = {
+        ['/yell'] = SandboxVars.iDrunk.AllowYell,
+        ['/whisper'] = SandboxVars.iDrunk.AllowWhisper,
+        ['/faction'] = SandboxVars.iDrunk.AllowFaction,
+        ['/safehouse'] = SandboxVars.iDrunk.AllowSafehouse,
+        ['/admin'] = SandboxVars.iDrunk.AllowAdmin,
+        ['/say'] = SandboxVars.iDrunk.AllowSay,
+        ['/general'] = SandboxVars.iDrunk.AllowGeneral,
+    }
+
+    if isAllowed[command] then
+        ISChat.instance.textEntry:setText(command .. ' ' .. DrunkSpeechFilter:filter(text))
+    end
+
     onCommandEntered(self)
 end
