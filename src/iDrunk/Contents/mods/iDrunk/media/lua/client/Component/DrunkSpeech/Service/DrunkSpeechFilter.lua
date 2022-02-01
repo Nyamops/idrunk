@@ -79,6 +79,7 @@ end
 
 local onCommandEntered = ISChat.onCommandEntered
 function ISChat:onCommandEntered()
-    ISChat.instance.textEntry:setText(DrunkSpeechFilter:filter(ISChat.instance.textEntry:getText()))
+    local command, text = string.match(ISChat.instance.textEntry:getText(), '(/%a+)%s+(.*)')
+    ISChat.instance.textEntry:setText(command .. ' ' .. DrunkSpeechFilter:filter(text))
     onCommandEntered(self)
 end
