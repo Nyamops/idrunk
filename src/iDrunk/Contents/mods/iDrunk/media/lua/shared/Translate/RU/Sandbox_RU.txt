@@ -1,0 +1,10 @@
+Sandbox_RU = {
+    Sandbox_iDrunk = "iDrunk",
+    Sandbox_AllowYell = "Разрешить yell",
+    Sandbox_AllowWhisper = "Разрешить whisper",
+    Sandbox_AllowFaction = "Разрешить faction",
+    Sandbox_AllowSafehouse = "Разрешить safehouse",
+    Sandbox_AllowAdmin = "Разрешить admin",
+    Sandbox_AllowSay = "Разрешить say",
+    Sandbox_AllowGeneral = "Разрешить general",
+}
