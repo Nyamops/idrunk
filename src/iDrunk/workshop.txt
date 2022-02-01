@@ -1,0 +1,128 @@
+version=1
+id=2709866494
+title=Immersive Medicine Revised [Alpha]
+tags=Build 41;Items;Misc;Multiplayer;Realistic;Traits
+visibility=public
+
+description=[h1]Immersive Medicine - extension of default medicine[/h1]
+description=
+description=Are you tired of the same type of meds?
+description=Are you surprised that in this world, all treatment consists of taking antidepressants and painkillers?
+description=
+description=I think I've found a solution for you. Meet: [b]Immersive Medicine[/b]
+description=
+description=[h1]Blood transfusion system[/h1]
+description=Do you think it's enough to monitor the character's default health? You're wrong.
+description=Now you need to monitor the blood volume in your body:
+description=[list]
+description=[*]Slight blood loss: slight fatigue and drowsiness;
+description=[*]Moderate blood loss: cold sweat, thirst;
+description=[*]Critical blood loss: blurred vision, feeling cold;
+description=[*]Fatal blood loss: complete exhaustion - don't forget to bring an obol with you
+description=[/list]
+description=
+description=Does the last point sound scary? Put the white slippers aside! Either stock up on blood packs of your group in advance, or ask your friend. Just be careful: suddenly he is infected or his group simply does not suit you.
+description=
+description=Becoming a donor is easy. You need: a blood testing kit, an empty blood bag, a catheter for intravenous transfusion. And a refrigerator. If you overdo it and you need to store a friend or blood bags somewhere.
+description=[i]To perform a blood transfusion, you need to select either the right or left forearm in the health panel[/i]
+description=
+description=[h1]Drugs and dosage forms[/h1]
+description=I have a whole line of drugs in store for you. There are not many of them yet, but the list will be replenished:
+description=[list]
+description=[*]Alkagine - an analgesic non-narcotic agent;
+description=[*]Bismuth subsalicylate - anti-ulcer and antidiarrheal agent;
+description=[*]Morphine - an opioid analgesic;
+description=[*]Butamirate - antitussive agent;
+description=[*]Naloxone - an opioid receptor antagonist;
+description=[*]HemoStop - hemostatic powder;
+description=[*]Umifenovir - an antiviral agent;
+description=[*]Nasivion - nasal drops;
+description=[*]Erythropoietin - in sports, it is doping;
+description=[/list]
+description=
+description=You can find more information about the drugs here: [url=https://steamcommunity.com/workshop/filedetails/discussion/2709866494/3198118671862279280/]Guide[/url]
+description=
+description=Morphine, naloxone... It sounds simple: take a syringe, stick a needle and let it run through the veins, what will come to mind? What if there are no syringes and needles in stock?
+description=
+description=[b]Dosage forms:[/b]
+description=[list]
+description=[*]Oral: tablets, syrups, liquids [i] (to take the drug, you need to select the head in the health panel)[/i];
+description=[*]Parenteral: intramuscular and intravenous injections [i] (to inject the drug, you need to select a body part in the health panel)[/i];
+description=[*]Topical: creams, powders [i] (to apply the drug, you need to select a body part in the health panel)[/i];
+description=[*]Nasal: drops [i] (to apply the drug, you need to select the head in the health panel)[/i];
+description=[/list]
+description=
+description=Found ampoules of alkagine, but no syringes? - Just drink the contents! Just don't drink too much. You're not a doctor to prescribe a dosage for yourself.
+description=
+description=[i]And how to find out the dosage and avoid an overdose?[/i] These are the questions you should ask yourself first!
+description=
+description=The first aid skill or trait [b] "Pharmacologist" [/b] will come to the rescue. With the help of them, you will be able to determine the maximum dose, know about side effects, and also identify unknown drugs.
+description=
+description=[h1]Traits[/h1]
+description=[list]
+description=[*]Pharmacist - can identify drugs. Knows everything about the composition of medicines and indications for their use;
+description=[*]Universal donor - can become a donor for all other blood groups;
+description=[*]Universal recipient - can accept blood of all other blood groups;
+description=[*]High pain threshold - able to tolerate very severe pain;
+description=[*]Low pain threshold - very intolerant of pain;
+description=[*]Opioid addiction - susceptibility to opiates is reduced by 40%, the pain threshold is increased. You won't live a day without opiates;
+description=[/list]
+description=
+description=[h1]Configuration for multiplayer and singleplayer[/h1]
+description=[h1]In game configuration[/h1]
+description=[i]See screenshots in the gallery[/i]
+description=
+description=[list]
+description=    [*] [b]You can turn off the blood system[/b] - "Enable blood system" option [i](active by default)[/i]
+description=This means that the character will not lose blood, can become a donor indefinitely, and the blood type compatibility will not be checked.
+description=    [*] [b]You can turn off the blood group system[/b] - "Enable blood groups" option [i](active by default)[/i]
+description=It is responsible only for the compatibility of blood groups.
+description=    [*] [b]You can turn off the heartbeat sound[/b] - "Enable heartbeat sound" option [i](active by default)[/i]
+description=[/list]
+description=
+description=[h1]Manual configuration[/h1]
+description=You need to modify a file.
+description=[code]
+description=Windows path: %HOMEDRIVE%%HOMEPATH%/Zomboid/Server/servertest_SandboxVars.lua
+description=Linux path: ~/Zomboid/Server/servertest_SandboxVars.lua
+description=[/code]
+description="servertest" may be different if you use a custom server name. For example: [i]myserver_SandboxVars.lua[/i]
+description=
+description=Append this to the bottom:
+description=[code]
+description=ImmersiveMedicine = {
+description=    IsBloodSystemActive = true,
+description=    IsBloodTypeSystemActive = true,
+description=    IsHeartbeatEnabled = true,
+description=}
+description=[/code]
+description=
+description=[h1]The mod is still under development![/h1]
+description=
+description=[h1]Supported languages[/h1]
+description=[list]
+description=    [*] Spanish    [ES] ([url=https://steamcommunity.com/id/Arkorinho]Arko Piktuviry[/url]) [i](May be incomplete)[/i]
+description=    [*] Russian    [RU]
+description=    [*] English    [EN] ([url=https://steamcommunity.com/id/itsmedirtydan/]nurver[/url])
+description=    [*] Chinese    [CN] ([url=https://steamcommunity.com/profiles/76561199036023646/]SSSherlockkk[/url]) [i](May be incomplete)[/i]
+description=    [*] German     [DE] ([url=https://github.com/Nyamops/imeds/pull/8]MichaelHochriegl[/url]) [i](May be incomplete)[/i]
+description=    [*] Italian    [IT] ([url=https://github.com/Nyamops/imeds/pull/7]ronfino[/url]) [i](May be incomplete)[/i]
+description=    [*] French     [FR] ([url=https://github.com/Nyamops/imeds/pull/6]Fingbel[/url]) [i](May be incomplete)[/i]
+description=    [*] Portuguese [PT] ([url=https://steamcommunity.com/id/DarkxLight/]Richard[/url]) [i](May be incomplete)[/i]
+description=    [*] Brazilian  [BR] ([url=https://steamcommunity.com/id/DarkxLight/]Richard[/url]) [i](May be incomplete)[/i]
+description=    [*] Korean  [KR] ([url=https://github.com/Nyamops/imeds/pull/13]Dr_teray[/url]) [i](May be incomplete)[/i]
+description=    [*] Polish  [PL] ([url=https://steamcommunity.com/profiles/76561198078633844]Kahned[/url]) [i](May be incomplete)[/i]
+description=[/list]
+description=
+description=[hr][/hr]
+description=[img]https://i.imgur.com/p7Fv1Z6.gif[/img]
+description=I spent many days and nights developing and designing the mod. I will be grateful for your positive feedback.
+description=
+description=[url=https://ko-fi.com/nyamops][img]https://i.imgur.com/5zacwdR.png[/img][/url]
+description=[url=https://discord.gg/UHRPcs9EbR][img]https://i.imgur.com/Qh5001l.png[/img][/url]
+description=
+description=Thanks for the icons to [url=https://steamcommunity.com/id/pseudownxd/]TMP[/url]
+description=
+description=[url=https://github.com/Nyamops/imeds]GitHub[/url]
+description=Workshop ID: 2709866494
+description=Mod ID: iMeds

@@ -1,0 +1,4 @@
+UI_EN = {
+    UI_DrunkSpeech_Dictionary_Filter = "[{"needle":["c","k","p","C","K","P"],"add":{"before":["h","f","H","F"]}},{"needle":["e","y","u","i","o","a","E","Y","U","I","O","A"],"replace":{"full":["o","oa","a","u","O","OA","A","U"]}},{"needle":["q","t","p","g","k","x","b","Q","T","P","G","K","X","B"],"add":{"after":["'"]}},{"needle":["s","S"],"replace":{"full":["th","TH"]}},{"needle":["d","w","D","W"],"replace":{"full":["f","F"]}}]",
+    UI_DrunkSpeech_Dictionary_Case_Filter = "{"a":"A","b":"B","c":"C","d":"D","e":"E","f":"F","g":"G","h":"H","i":"I","j":"J","k":"K","l":"L","m":"M","n":"N","o":"O","p":"P","q":"Q","r":"R","s":"S","t":"T","u":"U","v":"V","w":"W","x":"X","y":"Y","z":"Z"}",
+}
