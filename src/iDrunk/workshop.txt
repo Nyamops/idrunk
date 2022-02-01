@@ -1,0 +1,21 @@
+version=1
+id=2739421943
+title=iDrunk chat filter
+description=Do you think that being drunk you sound like a TV presenter? Then this mod is for you!
+description=
+description=Depending on the level of intoxication of your character, your chat messages will change slightly (or not slightly).
+description=
+description=[h1]Supported languages[/h1]
+description=[list]
+description=    [*] Russian [RU]
+description=    [*] English [EN]
+description=[/list]
+description=
+description=You can also add or adjust a special dictionary for your language. You can find the instructions in the github repository. Link at the bottom of the description.
+description=
+description=[url=https://ko-fi.com/nyamops][img]https://i.imgur.com/5zacwdR.png[/img][/url]
+description=[url=https://discord.gg/UHRPcs9EbR][img]https://i.imgur.com/Qh5001l.png[/img][/url]
+description=
+description=[url=https://github.com/Nyamops/idrunk]GitHub[/url]
+tags=Build 41;Balance;Hardmode;Interface;Misc;Multiplayer;Realistic;Silly/Fun
+visibility=public
